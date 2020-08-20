@@ -94,12 +94,63 @@
             "PREVISION": "ISAPRE"
         }
     ]
-    const dental = []
-    document.write('<p>Estadisticas centro medico ñuñoa</p>');
+    const dental = [{
+                "HORA": "08:30:00 AM",
+                "ESPECIALISTA": "ANDREA ZU�IGA",
+                "PACIENTE": "MARCELA RETAMAL",
+                "RUT": "11123425-6",
+                "PREVISION": "ISAPRE"
+            },
+            {
+                "HORA": "11:00:00 AM",
+                "ESPECIALISTA": "MARIA PIA ZA�ARTU",
+                "PACIENTE": "ANGEL MU�OZ",
+                "RUT": "9878789-2",
+                "PREVISION": "ISAPRE"
+            },
+            {
+                "HORA": "11:30:00 AM",
+                "ESPECIALISTA": "SCARLETT WITTING",
+                "PACIENTE": "MARIO KAST",
+                "RUT": "7998789-5",
+                "PREVISION": "FONASA"
+            },
+            {
+                "HORA": "01:00:00 PM",
+                "ESPECIALISTA": "FRANCISCO VON TEUBER",
+                "PACIENTE": "KARIN FERNANDEZ",
+                "RUT": "18887662-K",
+                "PREVISION": "FONASA"
+            },
+            {
+                "HORA": "01:30:00 PM",
+                "ESPECIALISTA": "EDUARDO VI�UELA",
+                "PACIENTE": "HUGO SANCHEZ",
+                "RUT": "17665461-4",
+                "PREVISION": "FONASA"
+            },
+            {
+                "HORA": "02:00:00 PM",
+                "ESPECIALISTA": "RAQUEL VILLASECA",
+                "PACIENTE": "ANA SEPULVEDA",
+                "RUT": "14441281-0",
+                "PREVISION": "ISAPRE"
+            }
+        ]
+
+    document.write('<h2>Estadisticas centro medico ñuñoa</h2>');
     document.write(`<p>Cantidad de atenciones para Radiología: ${radiología.length}</p>`);
     document.write(
-        `<p>Primera atencion: ${radiología[0].PACIENTE} - ${radiología[0].PREVISION} | Última atención: ${radiología[radiología.length - 1].PACIENTE} - ${radiología[radiología.length - 1].PREVISION}.</p>`
-    );
+        `<p>Primera atencion: ${radiología[0].PACIENTE} - ${radiología[0].RUT} - ${radiología[0].PREVISION} | Última atención: ${radiología[radiología.length - 1].PACIENTE} - ${radiología[radiología.length - 1].RUT} - ${radiología[radiología.length - 1].PREVISION}.</p>`
+        );
+    document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatología.length}</p>`);
+    document.write(
+        `<p>Primera atencion: ${traumatología[0].PACIENTE} - ${traumatología[0].RUT} - ${traumatología[0].PREVISION} | Última atención: ${traumatología[traumatología.length - 1].PACIENTE} - ${traumatología[traumatología.length - 1].RUT} - ${traumatología[traumatología.length - 1].PREVISION}.</p>`
+        );
+    document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
+    document.write(
+        `<p>Primera atencion: ${dental[0].PACIENTE} - ${traumatología[0].RUT} - ${dental[0].PREVISION} | Última atención: ${dental[dental.length - 1].PACIENTE} - ${dental[dental.length - 1].RUT} - ${dental[dental.length - 1].PREVISION}.</p>`
+        );
 </script>
 
 <body>
