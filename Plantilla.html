@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+</head>
+<script>
+    const radiología = [{
+            "HORA": "11:00:00 AM",
+            "ESPECIALISTA": "IGNACIO SCHULZ",
+            "PACIENTE": "FRANCISCA ROJAS",
+            "RUT": "9878782-1",
+            "PREVISION": "FONASA"
+        },
+        {
+            "HORA": "11:30:00 AM",
+            "ESPECIALISTA": "FEDERICO SUBERCASEAUX",
+            "PACIENTE": "PAMELA ESTRADA",
+            "RUT": "15345241-3",
+            "PREVISION": "ISAPRE"
+        },
+        {
+            "HORA": "03:00:00 PM",
+            "ESPECIALISTA": "FERNANDO WURTHZ",
+            "PACIENTE": "ARMANDO LUNA",
+            "RUT": "16445345-9",
+            "PREVISION": "ISAPRE"
+        },
+        {
+            "HORA": "03:30:00 PM",
+            "ESPECIALISTA": "ANA MARIA GODOY",
+            "PACIENTE": "MANUEL GODOY",
+            "RUT": "17666419-0",
+            "PREVISION": "FONASA"
+        },
+        {
+            "HORA": "04:00:00 PM",
+            "ESPECIALISTA": "PATRICIA SUAZO",
+            "PACIENTE": "RAMON ULLOA",
+            "RUT": "14989389-K",
+            "PREVISION": "FONASA"
+        },
+    ]
+    const traumatología = [{
+            "HORA": "08:00:00 AM",
+            "ESPECIALISTA": "MARIA PAZ ALTUZARRA",
+            "PACIENTE": "PAULA SANCHEZ",
+            "RUT": "15554774-5",
+            "PREVISION": "FONASA"
+        },
+        {
+            "HORA": "10:00:00 AM",
+            "ESPECIALISTA": "RAUL ARAYA",
+            "PACIENTE": "ANG�LICA NAVAS",
+            "RUT": "15444147-9",
+            "PREVISION": "ISAPRE"
+        },
+        {
+            "HORA": "10:30:00 AM",
+            "ESPECIALISTA": "MARIA ARRIAGADA",
+            "PACIENTE": "ANA KLAPP",
+            "RUT": "17879423-9",
+            "PREVISION": "ISAPRE"
+        },
+        {
+            "HORA": "11:00:00 AM",
+            "ESPECIALISTA": "ALEJANDRO BADILLA",
+            "PACIENTE": "FELIPE MARDONES",
+            "RUT": "1547423-6",
+            "PREVISION": "ISAPRE"
+        },
+        {
+            "HORA": "11:30:00 AM",
+            "ESPECIALISTA": "CECILIA BUDNIK",
+            "PACIENTE": "DIEGO MARRE",
+            "RUT": "16554741-K",
+            "PREVISION": "FONASA"
+        },
+        {
+            "HORA": "12:00:00 PM",
+            "ESPECIALISTA": "ARTURO CAVAGNARO",
+            "PACIENTE": "CECILIA MENDEZ",
+            "RUT": "9747535-8",
+            "PREVISION": "ISAPRE"
+        },
+        {
+            "HORA": "12:30:00 PM",
+            "ESPECIALISTA": "ANDRES KANACRI",
+            "PACIENTE": "MARCIAL SUAZO",
+            "RUT": "11254785-5",
+            "PREVISION": "ISAPRE"
+        }
+    ]
+    const dental = []
+    document.write('<p>Estadisticas centro medico ñuñoa</p>');
+    document.write(`<p>Cantidad de atenciones para Radiología: ${radiología.length}</p>`);
+    document.write(
+        `<p>Primera atencion: ${radiología[0].PACIENTE} - ${radiología[0].PREVISION} | Última atención: ${radiología[radiología.length - 1].PACIENTE} - ${radiología[radiología.length - 1].PREVISION}.</p>`
+    );
+</script>
+
+<body>
+
+</body>
+
+</html>
